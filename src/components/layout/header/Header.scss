@@ -1,0 +1,10 @@
+@import "../../../App.scss";
+
+.header-title{
+    color:navy;
+    background-color:$light-background-color;
+    cursor: pointer;
+    &:hover{
+        color:$hover-color;
+    }
+}
