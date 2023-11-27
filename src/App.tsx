@@ -6,6 +6,7 @@ import Home from './components/pages/home/Home';
 import SignUp from './components/pages/sign-up/SignUp';
 import SignIn from './components/pages/sign-in/SignIn';
 import Footer from './components/layout/footer/Footer';
+import {AuthenticationProvider} from "./components/utilities/authentication/AuthenticationContext";
 
 
 const App:React.FC = ()=>{
@@ -13,6 +14,7 @@ const App:React.FC = ()=>{
     <div className="App">
       
       <BrowserRouter>
+      <AuthenticationProvider>
       <Header/>
       <Routes>
       
@@ -21,6 +23,7 @@ const App:React.FC = ()=>{
       <Route path="sign-in" element={<SignIn/>} />
       </Routes>
        <Footer/>
+       </AuthenticationProvider>
       </BrowserRouter>
      
     </div>
