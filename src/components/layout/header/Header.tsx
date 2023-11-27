@@ -6,7 +6,7 @@ const Header:React.FC= () => {
   const navigate = useNavigate();
   return (
     <div>
-      <h1 className="header-title" onClick={()=>{navigate("/")}}>Simple Survey Project</h1>
+      <h1 className="header-title" onClick={()=>{navigate("/")}}>Simple Survey</h1>
 
     </div>
   )

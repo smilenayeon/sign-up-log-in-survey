@@ -1,7 +1,45 @@
 
 $hover-color:blue;
 $light-background-color:rgb(170, 170, 231);
+$basic-padding:5% 10%;
+$main-light-background-color:rgb(202, 202, 233);
+$basic-font-weight:700;
+
+
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @mixin button {
+    border:2px solid navy;
+    background-color:rgb(172, 172, 220);
+    border-radius: 10px;
+    padding:10px;
+    font:700 1rem Arial, sans-serif;
+    color:navy;
+    box-shadow: 1px 3px 3px grey;
+    cursor: pointer;
+    &:hover{
+        transform: scale(0.9);
+        background-color: rgb(122, 122, 196);
+    }
+  }
+
+
+
+button{
+    @include button;
+}
 
 h1{
     margin:0;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+
 }

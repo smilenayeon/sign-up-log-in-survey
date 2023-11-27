@@ -1,17 +1,17 @@
 import React from 'react';
 import {useNavigate} from "react-router-dom";
+import "./Home.scss";
 
 const Home:React.FC = () => {
   const navigate = useNavigate();
   return (
-    <div>
-      <h1> this is home</h1>
-      <p>Welcome to simple sign up, singn in and survey project using React, TypeScript, SASS, HTML. <br/>
-      Sign in to start the survery if you are a returning user. <br/>
-      Sign up if it's your first time here.
-      </p>
-      <button onClick={()=>{navigate("/sign-up")}}>Sign Up</button>
-      <button onClick={()=>{navigate("/sign-in")}}>Sign In</button>
+    <div className="home-page">
+      <h1> Welcome,</h1>
+      <p> This is a simple sign up, singn in and survey project using React, TypeScript, SASS, HTML</p> 
+      <p><button onClick={()=>{navigate("/sign-in")}}>Sign In</button> to start the survery if you are a returning user.</p>
+      <p><button onClick={()=>{navigate("/sign-up")}}>Sign Up</button> if it's your first time here.</p>
+      
+      
 
 
     </div>

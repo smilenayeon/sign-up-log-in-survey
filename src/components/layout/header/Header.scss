@@ -1,9 +1,11 @@
 @import "../../../App.scss";
 
 .header-title{
+    @include flex-center;
     color:navy;
     background-color:$light-background-color;
     cursor: pointer;
+    padding:$basic-padding;
     &:hover{
         color:$hover-color;
     }
